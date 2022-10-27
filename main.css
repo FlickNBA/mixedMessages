@@ -1,0 +1,49 @@
+body {
+    font-family: monospace;
+    background: #1D4350;
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+    background: linear-gradient(to right, #A43931, #1D4350);
+    /* https://uigradients.com/#RedOcean */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.667);
+    color: #eee;
+    width: 50%;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 0.125rem solid #C1B2AB;
+}
+
+main h1 {
+    font-size: 2rem;
+    text-align: justify;
+    text-align-last: right;
+    margin-bottom: 1rem;
+    border: 0.25rem dashed #C1B2AB;
+    padding: 1rem;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    text-align: right;
+    font-style: italic;
+    color: #C1B2AB;
+}
+
+main h3 {
+    color: #C1B2AB;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main h2::before {
+    content: "\"";
+    font-style: italic;
+}
