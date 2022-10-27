@@ -18,6 +18,8 @@ main {
     padding: 2rem;
     border-radius: 0.5rem;
     border: 0.125rem solid #C1B2AB;
+    transition-duration: 1s;
+    opacity: 0;
 }
 
 main h1 {
@@ -25,7 +27,7 @@ main h1 {
     text-align: justify;
     text-align-last: right;
     margin-bottom: 1rem;
-    border: 0.25rem dashed #C1B2AB;
+    border: 0.25rem dashed #111;
     padding: 1rem;
 }
 
