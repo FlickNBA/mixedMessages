@@ -1,8 +1,19 @@
-function getRandomQuote() {
-    let XHR = new XMLHttpRequest();
-    XHR.open("GET", "https://type.fit/api/quotes");
-    XHR.send();
-    XHR.onload = () => console.log(XHR.responseText);
+function GQ() { //GET QUOTE
+
+    fetch("https://type.fit/api/quotes")
+        .then((response) => response.json())
+        .then((responseJson) => {
+            getRandomQuote(responseJson);
+        });
+    
 }
 
-getRandomQuote();
+function getRandomQuote(JSON) {
+    console.log(`Found ${JSON.length} random quotes.`);
+    const chosenQuoteIndex = Math.floor(Math.random() * JSON.length);
+    console.log(`Choosing quote number ${chosenQuoteIndex}.`);
+    const chosenQuote = JSON[chosenQuoteIndex];
+    console.log(chosenQuote);
+}
+
+GQ();
